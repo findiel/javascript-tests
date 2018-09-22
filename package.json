@@ -1,0 +1,29 @@
+{
+  "name": "javascript-tests",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/wdio",
+    "report": "allure generate reports/allure --clean -o reports/results && allure open reports/results"
+  },
+  "author": "Bartlomiej Tuchowski (@Fjollsfinn)",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chromedriver": "^2.27.2",
+    "geckodriver": "^1.3.0",
+    "iedriver": "^3.0.0",
+    "selenium-server-standalone-jar": "^3.0.1",
+    "wdio-allure-reporter": "^0.1.2",
+    "wdio-browserstack-service": "^0.1.4",
+    "wdio-json-reporter": "^0.1.1",
+    "wdio-mocha-framework": "^0.5.8",
+    "wdio-sauce-service": "^0.3.1",
+    "wdio-spec-reporter": "0.0.5",
+    "webdriverio": "^4.6.1"
+  }
+}

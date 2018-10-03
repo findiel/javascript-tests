@@ -1,4 +1,4 @@
-# JS-TESTS
+# javascript-tests
 All what you need to start testing in JavaScript.
 
 # Installation

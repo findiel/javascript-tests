@@ -31,3 +31,4 @@ All what you need to start testing in JavaScript.
 1. Install webdriverio globally </br>
 2. Install mocha globally </br>
 3. Use ./specs folder as a directory where you'll save your tests </br>
+4. If you are working on Linux reverse \ signs to / in all scripts inpackage.json file

@@ -9,8 +9,8 @@ All what you need to start testing in JavaScript.
 
 # Running tests
 - run `npm test` in command line to execute all tests
-- run npm test -- --spec .\specs\home.spec.js in command line to execute index.html tests
-- run npm test -- --spec .\specs\loginAndRegister.spec.js in command line to execute Login and Register modals tests and properly register a new client
+- run `npm test` -- --spec .\specs\home.spec.js in command line to execute index.html tests
+- run `npm test` -- --spec .\specs\loginAndRegister.spec.js in command line to execute Login and Register modals tests and properly register a new client
 - run `npm run report` to see general tests report in browser
 - to remove old tests from general report delete `reports` directory
 

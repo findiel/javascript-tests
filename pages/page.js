@@ -47,12 +47,16 @@ class Page {
     return method.apply(browser, args);
   }
 
-  open(){
-    browser.url(this.path);
+  open(sectionName){
+    browser.url(sectionName ? this.sections[sectionName].path : this.path);
   }
 
-  click(selector){
-    return browser.click(this.getSelector(selector));
+  click(selector, index){
+    if(Array.isArray(selector)) {
+      return selector[index].click();
+    }else {
+      return browser.click(this.getSelector(selector));
+    }
   }
 
   fillForm(selector, data, submit){
@@ -67,6 +71,10 @@ class Page {
     }
   }
 
+  getValue(selector){
+    return browser.getValue(this.getSelector(selector));
+  }
+
   isVisible(selector){
     return browser.isVisible(this.getSelector(selector));
   }
@@ -79,6 +87,12 @@ class Page {
   waitForVisible(selector, timeout, reverse){
     timeout = timeout || this.timeout;
     return browser.waitForVisible(this.getSelector(selector), timeout, reverse);
+  }
+
+  try(selector) {
+    if(!selector) {
+      setTimeout(this.try, 500);
+    }
   }
 }
 

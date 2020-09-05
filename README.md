@@ -1,5 +1,5 @@
 # javascript-tests
-All what you need to start testing in JavaScript.
+All what you need to start E2E testing in JavaScript.
 
 # Installation
 - install Node.js and npm

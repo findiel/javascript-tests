@@ -17,7 +17,7 @@
     "chromedriver": "^2.27.2",
     "geckodriver": "^1.14.1",
     "iedriver": "^3.14.1",
-    "jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^9.0.0",
     "selenium-server-standalone-jar": "^3.0.1",
     "wdio-allure-reporter": "^0.1.2",
     "wdio-browserstack-service": "^0.1.4",
